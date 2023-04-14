@@ -1,0 +1,8 @@
+<h3>Soy el Padre!</h3>
+<button class="btn btn-primary mb-5 mt-5" (click)="depositar()">
+  Abonar Dinero
+</button>
+<app-child-amount
+  [amount]="amountTotal"
+  (notification)="amountTotal = $event"
+></app-child-amount>
